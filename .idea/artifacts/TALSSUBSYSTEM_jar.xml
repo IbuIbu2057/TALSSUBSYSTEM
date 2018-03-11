@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TALSSUBSYSTEM:jar">
+    <output-path>$PROJECT_DIR$/../../../../Servers/プラグインテスト/plugins</output-path>
+    <root id="archive" name="TALSSUBSYSTEM.jar">
+      <element id="module-output" name="TALSSUBSYSTEM" />
+    </root>
+  </artifact>
+</component>
