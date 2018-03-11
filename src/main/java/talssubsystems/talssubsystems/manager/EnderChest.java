@@ -38,7 +38,7 @@ public class EnderChest {
 
             //アイテム保存
             int page = Integer.parseInt(e.getClickedInventory().getTitle()
-                    .replace("§s§r§l§r§5§lエンダーチェスト §b","").replace("§dページ",""));
+                    .replace("§s§r§l§r§5§lエンダーチェスト §b§l","").replace("§dページ",""));
             CreatePlayerFile.enderchest.put(p.getName()+"page" + page,e.getClickedInventory());
 
             //音
@@ -48,7 +48,7 @@ public class EnderChest {
             p.openInventory(
                     CreatePlayerFile.enderchest.get(p.getName()+"page" +
                             Integer.parseInt(item.getItemMeta().getDisplayName()
-                                    .replace("§d§m§r§b ","").replace(" §d§lページ",""))
+                                    .replace("§d§m§r§b§l ","").replace(" §d§lページ",""))
                     ));
 
             //LISTに入れる

@@ -73,15 +73,15 @@ public class CreatePlayerFile {
             //チェスト
             c.setDisplayName("§d§m§r§b 1 §d§lページ §a選択中");
             //エンダー
-            en1.setDisplayName("§d§m§r§b 1 §d§lページ");
-            en2.setDisplayName("§d§m§r§b 2 §d§lページ");
-            en3.setDisplayName("§d§m§r§b 3 §d§lページ");
-            en4.setDisplayName("§d§m§r§b 4 §d§lページ");
-            en5.setDisplayName("§d§m§r§b 5 §d§lページ");
-            en6.setDisplayName("§d§m§r§b 6 §d§lページ");
-            en7.setDisplayName("§d§m§r§b 7 §d§lページ");
-            en8.setDisplayName("§d§m§r§b 8 §d§lページ");
-            en9.setDisplayName("§d§m§r§b 9 §d§lページ");
+            en1.setDisplayName("§d§m§r§b§l 1 §d§lページ");
+            en2.setDisplayName("§d§m§r§b§l 2 §d§lページ");
+            en3.setDisplayName("§d§m§r§b§l 3 §d§lページ");
+            en4.setDisplayName("§d§m§r§b§l 4 §d§lページ");
+            en5.setDisplayName("§d§m§r§b§l 5 §d§lページ");
+            en6.setDisplayName("§d§m§r§b§l 6 §d§lページ");
+            en7.setDisplayName("§d§m§r§b§l 7 §d§lページ");
+            en8.setDisplayName("§d§m§r§b§l 8 §d§lページ");
+            en9.setDisplayName("§d§m§r§b§l 9 §d§lページ");
 
             //ItemMetaセット
             glass.setItemMeta(gl);
@@ -110,12 +110,12 @@ public class CreatePlayerFile {
 
                 //チェスト配置
                 ItemMeta cm = chest.getItemMeta();
-                cm.setDisplayName("§d§m§r§b "+i+" §d§lページ §a選択中");
+                cm.setDisplayName("§d§m§r§b§l "+i+" §d§lページ §a選択中");
                 chest.setItemMeta(cm);
                 item[44+i] = chest;
 
                 //HashMap保存
-                Inventory Inventory = Bukkit.createInventory(null, 54, "§s§r§l§r§5§lエンダーチェスト §b"+i+"§dページ");
+                Inventory Inventory = Bukkit.createInventory(null, 54, "§s§r§l§r§5§lエンダーチェスト §b§l"+i+"§dページ");
                 Inventory.setContents(item);
                 enderchest.put(player.getName()+"page"+i,Inventory);
 
@@ -155,7 +155,7 @@ public class CreatePlayerFile {
                 //アイテム配列を作る
                 item = ((List<ItemStack>) conf.get("page"+i+"chest")).toArray(new ItemStack[0]);
                 //インベントリを制作
-                Inventory Inventory = Bukkit.createInventory(null, 54, "§s§r§l§r§5§lエンダーチェスト §b"+i+"§dページ");
+                Inventory Inventory = Bukkit.createInventory(null, 54, "§s§r§l§r§5§lエンダーチェスト §b§l"+i+"§dページ");
                 Inventory.setContents(item);
                 //保存
                 enderchest.put(player.getName()+"page"+i,Inventory);
@@ -186,7 +186,7 @@ public class CreatePlayerFile {
             //アイテム配列を作る
             item = ((List<ItemStack>) conf.get("page"+i+"chest")).toArray(new ItemStack[0]);
             //インベントリを制作
-            Inventory Inventory = Bukkit.createInventory(null, 54, "§s§r§l§r§5§lエンダーチェスト §b"+i+"§dページ");
+            Inventory Inventory = Bukkit.createInventory(null, 54, "§s§r§l§r§5§lエンダーチェスト §b§l"+i+"§dページ");
             Inventory.setContents(item);
             //保存
             enderchest.put(player.getName()+"page"+i,Inventory);
