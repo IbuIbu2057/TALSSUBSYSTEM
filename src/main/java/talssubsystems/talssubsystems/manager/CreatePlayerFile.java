@@ -105,8 +105,6 @@ public class CreatePlayerFile {
                 item = new ItemStack[]{air,air,air,air,air,air,air,air,air,air,air,air,air,air,air,air,air,air, air,air,air,air,air,air,air,air,air,air,air,air,air,air,air,air,air,air,glass,glass,glass,glass,glass,glass,glass,glass,glass,
                         ender1,ender2,ender3,ender4,ender5,ender6,ender7,ender8,ender9
                 };
-                //保存
-                conf.set("page"+i+"chest",item);
 
                 //チェスト配置
                 ItemMeta cm = chest.getItemMeta();
@@ -125,6 +123,9 @@ public class CreatePlayerFile {
                     players.add(player);
                 }
 
+                /* 保存 */
+                conf.set("page"+i+"chest",item);
+
                 //解禁設定
                 if(i==1)
                 {
@@ -134,7 +135,6 @@ public class CreatePlayerFile {
 
                 //ページ開放設定
                 conf.set("page"+i,false);
-
             }
             try {
                 conf.save(playerData);
