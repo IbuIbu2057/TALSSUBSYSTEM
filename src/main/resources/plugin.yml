@@ -4,3 +4,4 @@ main: talssubsystems.talssubsystems.TALSSUBSYSTEMS
 prefix: TALS
 authors: [ibuibu2056]
 description: Subsystem of TALS
+softdepend: [TALSAPI]

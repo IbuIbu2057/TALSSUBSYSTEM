@@ -117,14 +117,14 @@ public class CreatePlayerFile {
                 Inventory.setContents(item);
                 enderchest.put(player.getName()+"page"+i,Inventory);
 
+                /* 保存 */
+                conf.set("page"+i+"chest",enderchest.get(player.getName()+"page"+i).getContents());
+
                 //リスト追加
                 if(!players.contains(player))
                 {
                     players.add(player);
                 }
-
-                /* 保存 */
-                conf.set("page"+i+"chest",item);
 
                 //解禁設定
                 if(i==1)
@@ -145,7 +145,7 @@ public class CreatePlayerFile {
         else//既にあった場合
         {
             //リスト追加
-            if(players.contains(player))
+            if(enderchest.get(player.getName()+"page"+4) != null)
             {
                 return;
             }
