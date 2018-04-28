@@ -14,6 +14,14 @@ public final class TALSSUBSYSTEMS extends JavaPlugin {
 
     CreatePlayerFile cpf;
 
+    /***************************************************
+     *                                                 *
+     *   Copyright                                     *
+     *           The After Life Story                  *
+     *                              Rights Reserved    *
+     *                                                 *
+     ***************************************************/
+
     @Override
     public void onEnable() {
 
